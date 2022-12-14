@@ -22,7 +22,7 @@ $(function () {
 
     },'json');
 });
-/************************************* */
+
 $('#myForm2').submit(function (e) {
     e.preventDefault();
     var f = $(this);

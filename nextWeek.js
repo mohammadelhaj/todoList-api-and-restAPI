@@ -32,11 +32,11 @@ $('#myForm2').submit(function (e) {
     var nextPriority = $('.nextPriority').val();
     var nextStatus = $('.nextStatus').val();
 
-    $.post("http://localhost/assignement/api/nextweek",{nextweekTodo: nextweekTodo,nextPriority: nextPriority,nextStatus: nextStatus}
+    $.post("http://localhost/todolist/api/nextweek",{nextweekTodo: nextweekTodo,nextPriority: nextPriority,nextStatus: nextStatus}
     ,function(data){
        console.log("data" + data);
        $(function () {
-        $.get("http://localhost/assignement/api/nextweek/", function (data) {
+        $.get("http://localhost/todolist/api/nextweek/", function (data) {
             var html = "";
             for (var i = 0; i < data.length; i++) {
                 var idNext = data[i].idNext;

@@ -1,5 +1,5 @@
 $(function () {
-    $.get("http://localhost/assignement/api/nextweek/", function (data) {
+    $.get("http://localhost/todolist/api/nextweek/", function (data) {
         var html = "";
         for (var i = 0; i < data.length; i++) {
             var idNext = data[i].idNext;

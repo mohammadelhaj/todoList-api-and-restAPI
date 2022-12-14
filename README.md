@@ -4,6 +4,9 @@ a basic todo list using php and mysql with api and rest api
 i created a normal api for the table "thisweek" to get,post,delete and update the task
 # Rest Api
 the rest api is for "nextweek" table to  get and post the data 
+
+the endpoint are api/nextweek
+and api/nextweek/idNext
 # database note: 
 -sql file is included in the folder "database" in the project.
 
